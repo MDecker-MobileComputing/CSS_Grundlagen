@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Demo für Positionierung: Statisch vs Relativ</title>
+    <meta charset="utf-8">
+    <style>
+    <!--
+
+      /* ALLE Schriften ohne Serifen. */
+      body { font-family: sans-serif; }
+
+      h2 {
+        margin-top: 2em;
+      }
+
+      div {
+        background: yellowgreen;
+        width: 4em;
+        height: 4em;
+        display: inline-block; /* damit auch width+height ausgewertet werden */
+        margin: .5em; /* Außenabstand alle vier Seiten */
+        position: static; /* Default-Wert */
+      }
+
+      .position-relativ {
+        position: relative;
+        top: .5em;
+        left: .5em;
+        background-color: blueviolet;
+      }
+
+    -->
+    </style>
+</head>
+<body>
+
+  <h1>Demo für Positionierung: Statisch vs Relativ</h1>
+
+  <h2>Position: static</h2>
+  <div></div>
+  <div></div>
+  <div></div>
+
+
+  <h2>Position: relative</h2>
+  <div></div>
+  <div class="position-relativ"></div>
+  <div></div>
+
+</body>
+
