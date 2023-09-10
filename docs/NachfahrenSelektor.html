@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Nachfahren-Selektor</title>
+    <meta charset="utf-8">
+    <style>
+    <!--
+
+      /* ALLE Schriften ohne Serifen. */
+      body { font-family   : sans-serif; } 
+
+      /* CSS-Regel mit Nachfahrenselektor */
+      main p { 
+        color: #FF0000;
+        font-weight: bold;
+      }
+
+      main {
+        background: BurlyWood;
+        padding: .5em;
+      }
+
+      /** dunkelgrauer Hintergrund für main-Element */
+      section {
+        background: AntiqueWhite;
+        padding: .5em;
+      }
+
+    -->
+    </style>
+</head>
+<body>
+
+  <h1>Demo für Nachfahren-Selektor (Descendant Selector)</h1>
+
+  <p>Dieser Absatz hat keine rote Schrift, weil er sich nicht in einem <code>main</code>-Element befindet.</p>
+
+  <main>
+    
+    <p>Dieser Absatz ist ein direktes Kind-Element eines <code>main</code>-Elements und ist deshalb in rot geschrieben.</p>
+
+    <section>
+
+      <h2><code>Section</code> in <code>main</code>-Element</h2>
+    
+      <p>Dieser Absatz ist ein indirektes Kind-Element eines <code>main</code>-Elements und ist deshalb in rot geschrieben.</p>
+
+    </section>
+
+  </main>
+
+</body>
+
