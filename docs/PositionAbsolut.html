@@ -25,14 +25,20 @@
       /*
        * Ein Element mit position:absolut wird nicht im normalen Dokumentenfluss
        * berücksichtig (es wird auch kein Platz für es reserviert).
-       * Seine Position wird mit top/left/right/bottom im Bezug auf den nächsten
-       * Vorfahren, der selbst positioniert ist, bestimmt.
+       * Für seine Position wird als Koordinatenursprung der nächste Vorfahre
+       * verwendet, der nicht selbst den Standardwert "static" hat;
+       * gibt es keinen solchen Vorfahren, dann wird das body-Element genommen.
        */
       .position-absolut {
         position: absolute;
         top: 2em;
         left: 2em;
         background-color: blueviolet;
+      }
+
+      article {
+        background-color: burlywood;
+        position: relative;
       }
 
     -->
@@ -42,10 +48,16 @@
 
   <h1>Demo für Positionierung: Absolut</h1>
 
-  <h2>Position: absolut</h2>
-  <div></div>
-  <div class="position-absolut"></div>
-  <div></div>
+  <!--
+    ohne das Article-Element mit position!=static würde body als Koordinatenursprung für das absolut
+    positionierte Element genommen.
+   -->
+  <article>
+    <h2>Position: absolut</h2>
+    <div></div>
+    <div class="position-absolut"></div>
+    <div></div>
+  </article>
 
 </body>
 
