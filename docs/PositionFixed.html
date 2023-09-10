@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Demo für Positionierung: Fixed</title>
+    <meta charset="utf-8">
+    <style>
+    <!--
+
+      /* ALLE Schriften ohne Serifen. */
+      body { font-family: sans-serif; }
+
+      h2 {
+        margin-top: 2em;
+      }
+
+      div {
+        background: yellowgreen;
+        width: 4em;
+        height: 4em;
+        display: inline-block; /* damit auch width+height ausgewertet werden */
+        margin: .5em;          /* Außenabstand alle vier Seiten */
+        position: static;      /* Default-Wert */
+      }
+
+      /*
+       * Der Koordinatenursprung für ein mit position:fixed positioniertes
+       * Element ist der Viewport des Browsers. Beim vertikalen Scrollen
+       * bleibt das Element also stehen.
+       */
+      .position-fixed {
+        position: fixed;
+        top: 2em;
+        left: 11em;
+        background-color: blueviolet;
+      }
+
+    -->
+    </style>
+</head>
+<body>
+
+  <h1>Demo für Positionierung: Fixed</h1>
+
+  <h2>Position: Fixed</h2>
+  <div></div>
+  <div class="position-fixed"></div>
+  <div></div>
+  <br>
+
+  <!-- noch einige Zeilen dazu, damit man vertikal scrollen kann -->
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+  <div></div> <div></div> <div></div> <br>
+
+</body>
+
