@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Farben in CSS</title>
+    <meta charset="utf-8">
+    <style>
+    <!--
+
+      body { font-family: sans-serif; }
+
+      code { font-size: 110%; }
+
+      h1 { margin-bottom: 1em; }
+
+      li { padding: .5em; }
+
+      p.fett { font-weight: bold; }
+
+      span { text-decoration: underline; }
+
+      /* verschiedene Arten, die selbe Farbe "reines rot" zu definieren. */
+      .rot_name        { color: red;               }
+      .rot_rgb_hex_6   { color: #ff0000;           }
+      .rot_rgb_hex_8   { color: #ff0000ff;         }
+      .rot_rgb_tupel   { color: rgb(255, 0, 0);    }
+      .rot_rgba_tupel  { color: rgb(255, 0, 0, 255); }
+      .rot_hsl         { color: hsl(0, 100%, 50%); } /* 0% nicht erlaubt! */
+    -->
+    </style>
+</head>
+<body>
+
+  <h1>Farben in CSS</h1>
+
+  <p class="fett">Farbe "rot" über RGB-Werte (<span>R</span>ed, <span>G</span>reen, <span>B</span>lue):</p>
+  <ul>
+    <li class="rot_rgb_hex_6">Schriftfarbe "rot" über sechstelligen RGB-Hex-Code <code>#ff0000</code>.</li>
+    <li class="rot_rgb_hex_8">Schriftfarbe "rot" über achtstelligen RGB-Hex-Code <code>#ff0000ff</code>.</li>
+    <li class="rot_rgb_tupel">Schriftfarbe "rot" über RGB-Tupel <code>rgb(255, 0, 0)</code>.</li>
+    <li class="rot_rgba_tupel">Schriftfarbe "rot" über RGBA-Tupel <code>rgba(255, 0, 0, 255)</code>.</li>
+  </ul>
+
+  <p>
+    Beim achtstelligen RGB-Hex-Code und beim RGBA-Tupel ist die letzte Zahl der Transparenzwert (Alpha-Wert),
+    wobei der Maximalwert <code>ff</code> bzw. <code>255</code> für "keine Transparenz" (also volle Deckkraft)
+    steht.
+  </p>
+  <br>
+
+  <p class="fett">Weitere Möglichkeiten:</p>
+  <ul>
+    <li class="rot_name">Schriftfarbe "rot" über die <i>named color</i> <code>red</code>.</li>
+    <li class="rot_hsl">Schriftfarbe "rot" über HSL-Tupel <code>hsl(0, 100%, 50%)</code>:
+      <ul>
+        <li><span>H</span>ue: Farbwinkel (0 steht für die Farbe "rot")</li>
+        <li><span>S</span>aturation: Farbsättigung</li>
+        <li><span>L</span>ightness: Helligkeit</li>
+      </ul>
+    </li>
+  </ul>
+  <br>
+
+</body>
+
