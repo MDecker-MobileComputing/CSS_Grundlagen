@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <style>
     <!--
-
-      body { font-family: sans-serif; }
+      body { font-family: sans-serif;
+             padding: 0.5em; }
 
       code { font-size: 110%; }
 
@@ -19,12 +19,15 @@
       span { text-decoration: underline; }
 
       /* verschiedene Arten, die selbe Farbe "reines rot" zu definieren. */
-      .rot_name        { color: red;               }
-      .rot_rgb_hex_6   { color: #ff0000;           }
-      .rot_rgb_hex_8   { color: #ff0000ff;         }
-      .rot_rgb_tupel   { color: rgb(255, 0, 0);    }
-      .rot_rgba_tupel  { color: rgb(255, 0, 0, 255); }
-      .rot_hsl         { color: hsl(0, 100%, 50%); } /* 0% nicht erlaubt! */
+      .rot_rgb_hex_6    { color: #ff0000;                  }
+      .rot_rgb_hex_8    { color: #ff0000ff;                }
+      .rot_rgb_tupel    { color: rgb(255, 0, 0);           }
+      .rot_rgb_prozent  { color: rgb(100%, 0%, 0%);        }
+      .rot_rgba_tupel   { color: rgba(255, 0, 0, 255);       }
+      .rot_rgba_prozent { color: rgba(100%, 0%, 0%, 100%); }
+
+      .rot_name         { color: red;               }
+      .rot_hsl          { color: hsl(0, 100%, 50%); }
     -->
     </style>
 </head>
@@ -34,10 +37,12 @@
 
   <p class="fett">Farbe "rot" über RGB-Werte (<span>R</span>ed, <span>G</span>reen, <span>B</span>lue):</p>
   <ul>
-    <li class="rot_rgb_hex_6">Schriftfarbe "rot" über sechstelligen RGB-Hex-Code <code>#ff0000</code>.</li>
-    <li class="rot_rgb_hex_8">Schriftfarbe "rot" über achtstelligen RGB-Hex-Code <code>#ff0000ff</code>.</li>
-    <li class="rot_rgb_tupel">Schriftfarbe "rot" über RGB-Tupel <code>rgb(255, 0, 0)</code>.</li>
-    <li class="rot_rgba_tupel">Schriftfarbe "rot" über RGBA-Tupel <code>rgba(255, 0, 0, 255)</code>.</li>
+    <li class="rot_rgb_hex_6"   >Schriftfarbe "rot" über sechstelligen RGB-Hex-Code:      <code>#ff0000</code>.</li>
+    <li class="rot_rgb_hex_8"   >Schriftfarbe "rot" über achtstelligen RGB-Hex-Code:      <code>#ff0000ff</code>.</li>
+    <li class="rot_rgb_tupel"   >Schriftfarbe "rot" über RGB-Tupel mit absoluten Werten:  <code>rgb(255, 0, 0)</code>.</li>
+    <li class="rot_rgb_prozent" >Schriftfarbe "rot" über RGB-Tupel mit Prozentwerten:     <code>rgb(100%, 0%, 0%)</code>.</li>
+    <li class="rot_rgba_tupel"  >Schriftfarbe "rot" über RGBA-Tupel mit absoluten Werten: <code>rgba(255, 0, 0, 255)</code>.</li>
+    <li class="rot_rgba_prozent">Schriftfarbe "rot" über RGBA-Tupel mit Prozentwerten   : <code>rgba(100%, 0%, 0%, 100%)</code>.</li>
   </ul>
 
   <p>
