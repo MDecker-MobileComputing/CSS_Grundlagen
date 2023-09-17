@@ -12,7 +12,7 @@
       }
 
       code { font-size: 115%; }
-
+stretch
       h1 { margin-bottom: 1em; }
       h2 { margin-top: 2em; }
 
@@ -37,10 +37,10 @@
       }
 
 
-      .flex-schrumpfen-0 { flex-shrink: 0; }
-      .flex-schrumpfen-1 { flex-shrink: 1; } /* Default-Wert */
-      .flex-schrumpfen-2 { flex-shrink: 2; }
-      .flex-schrumpfen-3 { flex-shrink: 3; }
+      .flex-item-schrumpfen-0 { flex-shrink: 0; }
+      .flex-item-schrumpfen-1 { flex-shrink: 1; } /* Default-Wert */
+      .flex-item-schrumpfen-2 { flex-shrink: 2; }
+      .flex-item-schrumpfen-3 { flex-shrink: 3; }
 
     -->
     </style>
@@ -58,36 +58,52 @@
     <h2>Flex-Items mit <code>flex-shrink=0</code></h2>
 
     <div class="container-allgemein">
-      <div class="kind-allgemein flex-schrumpfen-0">Kind 1</div>
-      <div class="kind-allgemein flex-schrumpfen-0">Kind 2</div>
-      <div class="kind-allgemein flex-schrumpfen-0">Kind 3</div>
+      <div class="kind-allgemein flex-item-schrumpfen-0">Kind 1</div>
+      <div class="kind-allgemein flex-item-schrumpfen-0">Kind 2</div>
+      <div class="kind-allgemein flex-item-schrumpfen-0">Kind 3</div>
     </div>
+    <p>Das Schrumpfen ist für alle Flex-Items ausgeschaltet, deshalb kommt es zu einem Überlauf des Flex-Container.</p>
 
 
-    <h2>Flex-Items mit <code>flex-shrink=1</code> (Default-Wert)</h2>
+    <h2>Flex-Items alle mit <code>flex-shrink=1</code> (Default-Wert)</h2>
 
     <div class="container-allgemein">
-      <div class="kind-allgemein flex-schrumpfen-1">Kind 1</div>
-      <div class="kind-allgemein flex-schrumpfen-1">Kind 2</div>
-      <div class="kind-allgemein flex-schrumpfen-1">Kind 3</div>
+      <div class="kind-allgemein flex-item-schrumpfen-1">Kind 1</div>
+      <div class="kind-allgemein flex-item-schrumpfen-1">Kind 2</div>
+      <div class="kind-allgemein flex-item-schrumpfen-1">Kind 3</div>
+    </div>
+    <p>Alle Elemente haben denselben Schrumpffaktor, deswegen wird ein Überlauf des Flex-Containers vermieden und alle
+       Flex-Items haben dieselbe Breite.
+    </p>
+
+
+    <h2>Flex-Items alle mit <code>flex-shrink=2</code></h2>
+
+    <div class="container-allgemein">
+      <div class="kind-allgemein flex-item-schrumpfen-2">Kind 1</div>
+      <div class="kind-allgemein flex-item-schrumpfen-2">Kind 2</div>
+      <div class="kind-allgemein flex-item-schrumpfen-2">Kind 3</div>
     </div>
 
 
     <h2>Flex-Items mit unterschiedlichen Werten für <code>flex-shrink</code> (1:2:2)</h2>
 
     <div class="container-allgemein">
-      <div class="kind-allgemein flex-schrumpfen-1">Kind 1</div>
-      <div class="kind-allgemein flex-schrumpfen-2">Kind 2</div>
-      <div class="kind-allgemein flex-schrumpfen-2">Kind 3</div>
+      <div class="kind-allgemein flex-item-schrumpfen-1">Kind 1</div>
+      <div class="kind-allgemein flex-item-schrumpfen-2">Kind 2</div>
+      <div class="kind-allgemein flex-item-schrumpfen-2">Kind 3</div>
     </div>
+    <p>Das erste Element hat einen kleineren Schrumpf-Faktor als die anderen beiden, deshalb
+       ist es am breitesten.
+    </p>
 
 
     <h2>Flex-Items mit unterschiedlichen Werten für <code>flex-shrink</code> (1:2:3)</h2>
 
     <div class="container-allgemein">
-      <div class="kind-allgemein flex-schrumpfen-1">Kind 1</div>
-      <div class="kind-allgemein flex-schrumpfen-2">Kind 2</div>
-      <div class="kind-allgemein flex-schrumpfen-3">Kind 3</div>
+      <div class="kind-allgemein flex-item-schrumpfen-1">Kind 1</div>
+      <div class="kind-allgemein flex-item-schrumpfen-2">Kind 2</div>
+      <div class="kind-allgemein flex-item-schrumpfen-3">Kind 3</div>
     </div>
 
 </body>
