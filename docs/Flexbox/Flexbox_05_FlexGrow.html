@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Flexbox: flex-grow für Flex-Item</title>
+    <meta charset="utf-8">
+    <style>
+    <!--
+
+      body {
+        font-family: sans-serif;
+        padding: 0.5em;
+      }
+
+      code { font-size: 115%; }
+
+      h1 { margin-bottom: 1em; }
+      h2 { margin-top: 2em; }
+
+      div { border: 2px solid black; }
+
+      .container-allgemein {
+        background: orange;
+        margin: 1em;
+        width: 90vw;
+        height: 5em;
+        display: flex;
+        flex-direction: row; /* Default-Wert */
+        flex-wrap: nowrap;   /* Default-Wert */
+        gap: 0.2em;
+      }
+
+      .kind-allgemein {
+        background: greenyellow;
+        padding: 1.5em 0 1.5em 0;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+      }
+
+      .kind-flex-grow-0 { flex-grow: 0; }
+      .kind-flex-grow-1 { flex-grow: 1; }
+      .kind-flex-grow-2 { flex-grow: 2; }
+      .kind-flex-grow-3 { flex-grow: 3; }
+    -->
+    </style>
+</head>
+<body>
+
+  <h1>Flexbox: <code>flex-grow</code> für Flex-Item</h1>
+
+    <p>
+      Wenn in einem Flex-Container noch Platz entlang der Hauptachse ist, dann wird dieser auf Flex-Elemente
+      mit einem <code>flex-grow</code>-Wert größer-gleich <code>1</code> verteilt, und zwar im Verhältnis
+      der <code>flex-grow</code>-Werte.
+      Elemente mit <code>flex-grow:0</code> nehmen keinen zusätzlichen Platz ein,
+      negative Werte sind nicht zulässig.
+    </p>
+
+    <h2>Flex-Items ohne <code>flex-grow</code></h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-allgemein">Kind 1</div>
+      <div class="kind-allgemein">Kind 2</div>
+    </div>
+
+
+    <h2>Flex-Items mit <code>flex-grow</code> (1:1)</h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-allgemein kind-flex-grow-1">Kind 1</div>
+      <div class="kind-allgemein kind-flex-grow-1">Kind 2</div>
+    </div>
+
+
+    <h2>Flex-Items mit <code>flex-grow</code> (1:2)</h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-allgemein kind-flex-grow-1">Kind 1</div>
+      <div class="kind-allgemein kind-flex-grow-2">Kind 2</div>
+    </div>
+
+
+    <h2>Flex-Items mit <code>flex-grow</code> (1:3)</h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-allgemein kind-flex-grow-1">Kind 1</div>
+      <div class="kind-allgemein kind-flex-grow-3">Kind 2</div>
+    </div>
+
+
+    <h2>Flex-Items mit <code>flex-grow</code> (1:2:1)</h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-allgemein kind-flex-grow-1">Kind 1</div>
+      <div class="kind-allgemein kind-flex-grow-2">Kind 2</div>
+      <div class="kind-allgemein kind-flex-grow-1">Kind 3</div>
+    </div>
+
+
+    <h2>Flex-Items mit <code>flex-grow</code> (1:2:2)</h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-allgemein kind-flex-grow-1">Kind 1</div>
+      <div class="kind-allgemein kind-flex-grow-2">Kind 2</div>
+      <div class="kind-allgemein kind-flex-grow-2">Kind 3</div>
+    </div>
+
+
+    <h2>Flex-Items mit <code>flex-grow</code> (0:1:1)</h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-allgemein kind-flex-grow-0">Kind 1</div>
+      <div class="kind-allgemein kind-flex-grow-1">Kind 2</div>
+      <div class="kind-allgemein kind-flex-grow-1">Kind 3</div>
+    </div>
+
+</body>
