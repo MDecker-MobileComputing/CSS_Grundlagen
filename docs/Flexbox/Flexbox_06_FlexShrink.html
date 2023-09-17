@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Flexbox: flex-shrink für Flex-Item</title>
+    <meta charset="utf-8">
+    <style>
+    <!--
+
+      body {
+        font-family: sans-serif;
+        padding: 0.5em;
+      }
+
+      code { font-size: 115%; }
+
+      h1 { margin-bottom: 1em; }
+      h2 { margin-top: 2em; }
+
+      div { border: 2px solid black; }
+
+      .container-allgemein {
+        background: orange;
+        margin: 1em;
+        width: 50em;
+        height: 5em;
+        display: flex;
+        gap: 0.2em;
+      }
+
+      .kind-allgemein {
+        background: greenyellow;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        padding-top: 0.3em;
+        width: 20em;
+        text-align: center;
+      }
+
+
+      .flex-schrumpfen-0 { flex-shrink: 0; }
+      .flex-schrumpfen-1 { flex-shrink: 1; } /* Default-Wert */
+      .flex-schrumpfen-2 { flex-shrink: 2; }
+      .flex-schrumpfen-3 { flex-shrink: 3; }
+
+    -->
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox: <code>flex-shrink</code> für Flex-Item</h1>
+
+    <p>
+      Mit der CSS-Eigenschaft <code>flex-shrink</code> kann der Schrumpffaktor für einzelne
+      Flex-Items festgelegt werden, der dann ausgewertet wird, wenn entlang der Hauptachse
+      des Flex-Container nicht genug Platz für alle Flex-Items ist.
+    </p>
+
+    <h2>Flex-Items mit <code>flex-shrink=0</code></h2>
+
+    <div class="container-allgemein">
+      <div class="kind-allgemein flex-schrumpfen-0">Kind 1</div>
+      <div class="kind-allgemein flex-schrumpfen-0">Kind 2</div>
+      <div class="kind-allgemein flex-schrumpfen-0">Kind 3</div>
+    </div>
+
+
+    <h2>Flex-Items mit <code>flex-shrink=1</code> (Default-Wert)</h2>
+
+    <div class="container-allgemein">
+      <div class="kind-allgemein flex-schrumpfen-1">Kind 1</div>
+      <div class="kind-allgemein flex-schrumpfen-1">Kind 2</div>
+      <div class="kind-allgemein flex-schrumpfen-1">Kind 3</div>
+    </div>
+
+
+    <h2>Flex-Items mit unterschiedlichen Werten für <code>flex-shrink</code> (1:2:2)</h2>
+
+    <div class="container-allgemein">
+      <div class="kind-allgemein flex-schrumpfen-1">Kind 1</div>
+      <div class="kind-allgemein flex-schrumpfen-2">Kind 2</div>
+      <div class="kind-allgemein flex-schrumpfen-2">Kind 3</div>
+    </div>
+
+
+    <h2>Flex-Items mit unterschiedlichen Werten für <code>flex-shrink</code> (1:2:3)</h2>
+
+    <div class="container-allgemein">
+      <div class="kind-allgemein flex-schrumpfen-1">Kind 1</div>
+      <div class="kind-allgemein flex-schrumpfen-2">Kind 2</div>
+      <div class="kind-allgemein flex-schrumpfen-3">Kind 3</div>
+    </div>
+
+</body>
