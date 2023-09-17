@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Flexbox: Inhalt entlang Hauptachse ausrichten</title>
+    <meta charset="utf-8">
+    <style>
+    <!--
+
+      body { 
+        font-family: sans-serif;
+        padding: 0.5em; 
+      }
+
+      code { font-size: 110%; }
+
+      h2 { margin-top: 2em; }
+
+      div { border: 2px solid black; }
+
+      .container-allgemein {
+        background: orange;
+        margin: 1em;
+        width: 90vw;
+        display: flex;
+        flex-direction: row; /* Default-Wert */
+        flex-wrap: nowrap;   /* Default-Wert */
+      }
+
+      .ausrichten-flex-start {
+        justify-content: flex-start; /* Default-Wert */
+      }
+
+      .ausrichten-flex-end {
+        justify-content: flex-end;
+      }
+
+      .ausrichten-center {
+        justify-content: center;
+      }
+
+      .ausrichten-space-between {
+        justify-content: space-between;
+      }
+
+      .ausrichten-space-around {
+        justify-content: space-around;
+      }
+
+      .ausrichten-space-evenly {
+        justify-content: space-evenly
+      }
+
+
+      .kind-in-container {
+        background: greenyellow;
+        padding: .5em;
+        margin: .5em;
+        width: 5em;
+        height: 5em;
+      }
+
+    -->
+    </style>
+</head>
+<body>
+
+  <h1>Flexbox: Inhalt entlang Hauptachse ausrichten</h1>
+
+    <h2>Flexbox-Container mit <code>justify-content:flex-start</code></h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-in-container">Kind 1</div>
+      <div class="kind-in-container">Kind 2</div>
+      <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+    </div>
+
+
+    <h2>Flexbox-Container mit <code>justify-content:flex-end</code></h2>
+
+    <div class="container-allgemein ausrichten-flex-end">
+      <div class="kind-in-container">Kind 1</div>
+      <div class="kind-in-container">Kind 2</div>
+      <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+    </div>    
+
+
+    <h2>Flexbox-Container mit <code>justify-content:center</code></h2>
+
+    <div class="container-allgemein ausrichten-center">
+      <div class="kind-in-container">Kind 1</div>
+      <div class="kind-in-container">Kind 2</div>
+      <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+    </div>    
+
+
+    <h2>Flexbox-Container mit <code>justify-content:space-between</code></h2>
+
+    <div class="container-allgemein ausrichten-space-between">
+      <div class="kind-in-container">Kind 1</div>
+      <div class="kind-in-container">Kind 2</div>
+      <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+    </div>    
+
+
+    <h2>Flexbox-Container mit <code>justify-content:space-around</code></h2>
+
+    <div class="container-allgemein ausrichten-space-around">
+      <div class="kind-in-container">Kind 1</div>
+      <div class="kind-in-container">Kind 2</div>
+      <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+    </div>    
+
+
+    <h2>Flexbox-Container mit <code>justify-content:space-evenly</code></h2>
+
+    <div class="container-allgemein ausrichten-space-evenly">
+      <div class="kind-in-container">Kind 1</div>
+      <div class="kind-in-container">Kind 2</div>
+      <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+    </div>    
+
+</body>

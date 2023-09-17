@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         <!--
-            body { font-family   : sans-serif; } /* ALLE Schriften ohne Serifen. */
+            body { 
+              font-family  : sans-serif;  /* ALLE Schriften ohne Serifen. */
+              margin-bottom: 3em;         /* "Leerzeilen" am Ende der Seite */
+            } 
+
             li   { margin-bottom :  .5em;      } /* Mehr Abstand nach Aufzählungspunkten. */
             h2   { margin-top    : 2.5em;      } /* Mehr Abstand vor Überschriften der zweiten Ebene. */
+            code { font-size     :  110%;      } /* Zeichen für CSS-Schlüsselwörter im laufenden Text etwas größer. */
         -->
     </style>
 </head>
@@ -46,21 +51,22 @@
 
   <h2 id="abstaende">Abstände</h2>
   <ul>
-    <li><a href="./Abstaende/Innenabstaende.html"  >Innenabstände</a></li>
-    <li><a href="./Abstaende/Aussenabstaende.html" >Außenabstände</a></li>
+    <li><a href="./Abstaende/Innenabstaende.html"  >Innenabstände (Eigenschaft <code>padding</code>)</a></li>
+    <li><a href="./Abstaende/Aussenabstaende.html" >Außenabstände (Eigenschaft <code>margin</code>)</a></li>
   </ul>
 
   <h2 id="flexbox">Flexbox</h2>
   <ul>
     <li><a href="./Flexbox/Flexbox_01_Horizontal-vs-Vertikal.html" >Flexbox-Container: horizontal vs vertikal</a></li>
-    <li><a href="./Flexbox/Flexbox_02_Umbrechen.html"              >Flexbox-Container: Umbrechen (wrap)</a></li>
+    <li><a href="./Flexbox/Flexbox_02_Umbrechen.html"              >Flexbox-Container: Umbrechen (Eigenschaft <code>flex-wrap</code>)</a></li>
+    <li><a href="./Flexbox/Flexbox_03_JustifyContent.html"         >Flexbox-Container: Inhalt entlang Hauptachse ausrichten (Eigenschaft <code>justify-content</code>)</a></li>
   </ul>
 
   <h2 id="verschiedenes">Verschiedenes</h2>
   <ul>
     <li><a href="./Verschiedenes/Vererbung.html"  >Vererbung</a></li>
     <li><a href="./Verschiedenes/Farben.html"     >Farben</a></li>
-    <li><a href="./Verschiedenes/FloatRight.html" >Float right</a></li>
+    <li><a href="./Verschiedenes/FloatRight.html" >Float right (Eigenschaft <code>float:right</code>)</a></li>
   </ul>
 
 </body>
