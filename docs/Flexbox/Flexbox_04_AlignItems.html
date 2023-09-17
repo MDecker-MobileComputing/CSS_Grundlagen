@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Flexbox: Flex-Items entlang Querachse ausrichten</title>
+    <meta charset="utf-8">
+    <style>
+    <!--
+
+      body {
+        font-family: sans-serif;
+        padding: 0.5em;
+      }
+
+      code { font-size: 110%; }
+
+      h2 { margin-top: 2em; }
+
+      div { border: 2px solid black; }
+
+      .container-allgemein {
+        background: orange;
+        margin: 1em;
+        width: 50em;
+        height: 15em;
+        display: flex;
+        flex-direction: row; /* Default-Wert */
+        flex-wrap: nowrap;   /* Default-Wert */
+        justify-content: center;
+      }
+
+      .ausrichten-flex-start { align-items:flex-start; }
+      .ausrichten-flex-end   { align-items:flex-end;   }
+      .ausrichten-center     { align-items:center;     }
+      .ausrichten-stretch    { align-items:stretch;    }
+      .ausrichten-baseline   { align-items:baseline;   }
+
+      .kind-allgemein {
+        background: greenyellow;
+        padding: .5em;
+        margin: .5em;
+        width: 5em;
+      }
+
+      .kind-1 { height: 4em; }
+      .kind-2 { height: 3em; }
+      .kind-3 { height: 5em; }
+      .kind-4 { height: 2em; }
+      .kind-5 { height: 6em; }
+
+      .padding-top-0 { padding-top: 0em; }
+      .padding-top-1 { padding-top: 1em; }
+      .padding-top-2 { padding-top: 2em; }
+      .padding-top-3 { padding-top: 3em; }
+
+    -->
+    </style>
+</head>
+<body>
+
+  <h1>Flexbox: Flex-Items entlang Querachse ausrichten</h1>
+
+    <h2>Flexbox-Container mit <code>align-items:flex-start</code></h2>
+
+    <div class="container-allgemein ausrichten-flex-start">
+      <div class="kind-allgemein kind-1">Kind 1</div>
+      <div class="kind-allgemein kind-2">Kind 2</div>
+      <div class="kind-allgemein kind-3">Kind 3</div>
+      <div class="kind-allgemein kind-4">Kind 4</div>
+      <div class="kind-allgemein kind-5">Kind 5</div>
+    </div>
+
+
+    <h2>Flexbox-Container mit <code>align-items:flex-end</code></h2>
+
+    <div class="container-allgemein ausrichten-flex-end">
+      <div class="kind-allgemein kind-1">Kind 1</div>
+      <div class="kind-allgemein kind-2">Kind 2</div>
+      <div class="kind-allgemein kind-3">Kind 3</div>
+      <div class="kind-allgemein kind-4">Kind 4</div>
+      <div class="kind-allgemein kind-5">Kind 5</div>
+    </div>
+
+
+    <h2>Flexbox-Container mit <code>align-items:center</code></h2>
+
+    <div class="container-allgemein ausrichten-center">
+      <div class="kind-allgemein kind-1">Kind 1</div>
+      <div class="kind-allgemein kind-2">Kind 2</div>
+      <div class="kind-allgemein kind-3">Kind 3</div>
+      <div class="kind-allgemein kind-4">Kind 4</div>
+      <div class="kind-allgemein kind-5">Kind 5</div>
+    </div>
+
+
+    <h2>Flexbox-Container mit <code>align-items:stretch</code> (Kind-Elemente haben <code>height</code> nicht gesetzt)</h2>
+
+    <div class="container-allgemein ausrichten-stretch">
+      <div class="kind-allgemein">Kind 1</div>
+      <div class="kind-allgemein">Kind 2</div>
+      <div class="kind-allgemein">Kind 3</div>
+      <div class="kind-allgemein">Kind 4</div>
+      <div class="kind-allgemein">Kind 5</div>
+    </div>
+
+
+    <h2>Flexbox-Container mit <code>align-items:baseline</code></h2>
+
+    <div class="container-allgemein ausrichten-baseline">
+      <div class="kind-allgemein padding-top-0">Kind 1 abc abc abc abc abc abc</div>
+      <div class="kind-allgemein padding-top-1">Kind 2</div>
+      <div class="kind-allgemein padding-top-2">Kind 3 abc abc abc</div>
+      <div class="kind-allgemein padding-top-1">Kind 4</div>
+      <div class="kind-allgemein padding-top-3">Kind 5 abc abc</div>
+    </div>
+
+    <p>Die Baseline ist die Unterkante der ersten Textzeile in jedem Kind-Element (Flex-Item).</p>
+
+</body>
