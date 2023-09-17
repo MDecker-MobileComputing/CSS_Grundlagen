@@ -6,27 +6,41 @@
     <style>
     <!--
 
-      body { font-family: sans-serif;
-             padding: 0.5em; }
+      body { 
+        font-family: sans-serif;
+        padding: 0.5em; 
+      }
 
       code { font-size: 110%; }
 
       h2 { margin-top: 2em; }
 
+      div { border: 2px solid black; }
+
       .container-allgemein {
         background: orange;
         margin: 1em;
-        width: 50vw;
+        width: 50vw;  /* 50% von Viewport-Breite */
+        height: 25vh; /* 20% von Viewport-Höhe   */
       }
 
       .flex-container-horizontal {
         display: flex;
-        flex-direction: row;
       }
 
       .flex-container-vertikal {
         display: flex;
         flex-direction: column;
+      }
+
+      .flex-container-horizontal-rueckwaerts {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .flex-container-vertikal-rueckwaerts {
+        display: flex;
+        flex-direction: column-reverse;
       }
 
       .kind-in-container {
@@ -45,24 +59,37 @@
     <h2>Flexbox-Container mit <code>flex-direction:row</code></h2>
 
     <div class="container-allgemein flex-container-horizontal">
-
       <div class="kind-in-container">Kind 1</div>
       <div class="kind-in-container">Kind 2</div>
       <div class="kind-in-container">Kind 3</div>
-
     </div>
 
 
     <h2>Flexbox-Container mit <code>flex-direction:column</code></h2>
 
     <div class="container-allgemein flex-container-vertikal">
-
       <div class="kind-in-container">Kind 1</div>
       <div class="kind-in-container">Kind 2</div>
       <div class="kind-in-container">Kind 3</div>
-
     </div>
 
+
+    <h2>Flexbox-Container mit <code>flex-direction:row-reverse</code></h2>
+
+    <div class="container-allgemein flex-container-horizontal-rueckwaerts">
+      <div class="kind-in-container">Kind 1</div>
+      <div class="kind-in-container">Kind 2</div>
+      <div class="kind-in-container">Kind 3</div>
+    </div>
+
+
+    <h2>Flexbox-Container mit <code>flex-direction:column-reverse</code></h2>
+
+    <div class="container-allgemein flex-container-vertikal-rueckwaerts">
+      <div class="kind-in-container">Kind 1</div>
+      <div class="kind-in-container">Kind 2</div>
+      <div class="kind-in-container">Kind 3</div>
+    </div>    
 
 </body>
 
