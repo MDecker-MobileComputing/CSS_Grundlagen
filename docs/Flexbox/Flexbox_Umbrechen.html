@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Flexbox: Horizontal vs. Vertikal</title>
+    <title>Flexbox: Umbrechen (wrap)</title>
     <meta charset="utf-8">
     <style>
     <!--
@@ -20,34 +20,32 @@
       .container-allgemein {
         background: orange;
         margin: 1em;
-        width: 50vw;  /* 50% von Viewport-Breite */
-        height: 25vh; /* 20% von Viewport-Höhe   */
-      }
-
-      .flex-container-horizontal {
+        width: 15em;
         display: flex;
         flex-direction: row; /* Default-Wert */
       }
 
-      .flex-container-vertikal {
-        display: flex;
-        flex-direction: column;
+      .container-umbrechen-aus {
+
+        flex-wrap: nowrap; /* Default-Wert */
       }
 
-      .flex-container-horizontal-rueckwaerts {
-        display: flex;
-        flex-direction: row-reverse;
+      .container-umbrechen-an {
+
+        flex-wrap: wrap;
       }
 
-      .flex-container-vertikal-rueckwaerts {
-        display: flex;
-        flex-direction: column-reverse;
+      .container-umbrechen-umgekehrt {
+
+        flex-wrap: wrap-reverse;
       }
 
       .kind-in-container {
         background: greenyellow;
         padding: .5em;
         margin: .5em;
+        width: 5em;
+        height: 5em;
       }
 
     -->
@@ -57,40 +55,37 @@
 
   <h1>Flexbox: Horizontal vs. Vertikal</h1>
 
-    <h2>Flexbox-Container mit <code>flex-direction:row</code></h2>
+    <h2>Flexbox-Container mit <code>flex-wrap:nowrap</code></h2>
 
     <div class="container-allgemein flex-container-horizontal">
       <div class="kind-in-container">Kind 1</div>
       <div class="kind-in-container">Kind 2</div>
       <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+      <div class="kind-in-container">Kind 5</div>
     </div>
 
 
-    <h2>Flexbox-Container mit <code>flex-direction:column</code></h2>
+    <h2>Flexbox-Container mit <code>flex-wrap:wrap</code></h2>
 
-    <div class="container-allgemein flex-container-vertikal">
+    <div class="container-allgemein container-umbrechen-an">
       <div class="kind-in-container">Kind 1</div>
       <div class="kind-in-container">Kind 2</div>
       <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+      <div class="kind-in-container">Kind 5</div>
     </div>
 
 
     <h2>Flexbox-Container mit <code>flex-direction:row-reverse</code></h2>
 
-    <div class="container-allgemein flex-container-horizontal-rueckwaerts">
+    <div class="container-allgemein container-umbrechen-umgekehrt">
       <div class="kind-in-container">Kind 1</div>
       <div class="kind-in-container">Kind 2</div>
       <div class="kind-in-container">Kind 3</div>
+      <div class="kind-in-container">Kind 4</div>
+      <div class="kind-in-container">Kind 5</div>
     </div>
-
-
-    <h2>Flexbox-Container mit <code>flex-direction:column-reverse</code></h2>
-
-    <div class="container-allgemein flex-container-vertikal-rueckwaerts">
-      <div class="kind-in-container">Kind 1</div>
-      <div class="kind-in-container">Kind 2</div>
-      <div class="kind-in-container">Kind 3</div>
-    </div>    
 
 </body>
 
