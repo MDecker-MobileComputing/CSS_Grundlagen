@@ -6,8 +6,10 @@
     <style>
     <!--
 
-      body { font-family: sans-serif;
-             padding: 0.5em; }
+      body {
+        font-family: sans-serif;
+        padding: 0.5em 0.5em 3em 0.5em;
+      }
 
       code { font-size: 110%; }
 
@@ -43,21 +45,63 @@
         border: 1em solid;
       }
 
+      #kasten-3 {
+        box-sizing: content-box;  /* Default-Wert */
+        padding: 1em;
+      }
+
+      #kasten-4 {
+        box-sizing: border-box;
+        padding: 1em;
+      }
+
+      #kasten-5 {
+        box-sizing: content-box;  /* Default-Wert */
+        border: 1em solid;
+        padding: 1em;
+      }
+
+      #kasten-6 {
+        box-sizing: border-box;
+        border: 1em solid;
+        padding: 1em;
+      }
+
     </style>
 </head>
 <body>
 
   <h1>Box-Modell (Eigenschaft <code>box-sizing</code>)</h1>
 
+    <p>
+      Der Default-Wert für die CSS-Eigenschaft <code>box-sizing</code> in <code>content-box</code>,
+      oftmals ist aber der Wert <code>border-box</code> zu bevorzugen, weil hierbei Rand und/oder Padding
+      (Innenabstand) in der Größe des Elements enthalten ist.
+    </p>
+
     <h2>Referenzkasten mit <code>width:5em</code> und <code>height:5em</code></h2>
     <div></div>
 
-    <h2>Referenzkasten mit Rand von <code>1em</code> bei <code>box-sizing:content-box</code> (Default-Wert)</h2>
+    <h2>Referenzkasten mit Rand von <code>1em</code> Breite mit <code>content-box</code></h2>
     <div id="kasten-1"></div>
     <p>Der Rand wird zu der mit <code>width</code> und <code>height</code> definierten Größe hinzuaddiert.</p>
 
-    <h2>Referenzkasten mit Rand von <code>1em</code> bei <code>box-sizing:border-box</code> (Default-Wert)</h2>
+    <h2>Referenzkasten mit Rand von <code>1em</code> Breite mit <code>border-box</code></h2>
     <div id="kasten-2"></div>
     <p>Der Rand ist in der mit <code>width</code> und <code>height</code> definierten Größe enthalten.</p>
+
+    <h2>Referenzkasten mit Padding von <code>1em</code> Breite mit <code>content-box</code></h2>
+    <div id="kasten-3"></div>
+    <p>Das Padding (Innenabstand) wird zu der mit <code>width</code> und <code>height</code> definierten Größe hinzuaddiert.</p>
+
+    <h2>Referenzkasten mit Padding von <code>1em</code> Breite mit <code>border-box</code></h2>
+    <div id="kasten-4"></div>
+    <p>Das Padding (Innenabstand) ist in der mit <code>width</code> und <code>height</code> definierten Größe enthalten.</p>
+
+    <h2>Referenzkasten mit Padding+Rand von jeweils <code>1em</code> Breite mit <code>content-box</code></h2>
+    <div id="kasten-5"></div>
+
+    <h2>Referenzkasten mit Padding+Rand von jeweils <code>1em</code> Breite mit <code>border-box</code></h2>
+    <div id="kasten-6"></div>
 
 </body>
