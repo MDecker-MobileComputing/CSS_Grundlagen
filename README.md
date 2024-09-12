@@ -12,8 +12,8 @@ This repository contains some files to demonstrate basic usage of *Cascading Sty
 
 <br>
 
-The HTML file in this repository can be viewed directly at 
-[this URL](https://mdecker-mobilecomputing.github.io/CSS_Grundlagen/index.html)
+The HTML file in this repository can be viewed directly at
+[**this URL**](https://mdecker-mobilecomputing.github.io/CSS_Grundlagen/index.html)
 (served by [GitHub Pages](https://pages.github.com/)).
 
 <br>
