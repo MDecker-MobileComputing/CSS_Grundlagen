@@ -11,7 +11,8 @@ https://mdecker-mobilecomputing.github.io/CSS_Grundlagen/index.html
 
 <br>
 
-Analoge Beispiele auf Englisch finden sich im folgenden Repository: https://github.com/MDecker-MobileComputing/HTML_Basics
+Analoge Beispiele auf Englisch finden sich im folgenden Repository:<br>
+https://github.com/MDecker-MobileComputing/HTML_Basics
 
 <br>
 
