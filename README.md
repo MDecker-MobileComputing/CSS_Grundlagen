@@ -4,17 +4,14 @@
 
 This repository contains some files to demonstrate basic usage of *Cascading Style Sheets (CSS)* for HTML.
 
+Dieses Repository enthält einige Dateien um die grundlegenden Konzepte von *Cascading Style Sheets (CSS)* für das Styling von HTML-Seiten zu demonstrieren. 
+
+Unter der folgenden URL können die Beispiele direkt im Browser betrachtet werden:<br>
+https://mdecker-mobilecomputing.github.io/CSS_Grundlagen/index.html
+
 <br>
 
-----
-
-## Direct view ##
-
-<br>
-
-The HTML file in this repository can be viewed directly at
-[**this URL**](https://mdecker-mobilecomputing.github.io/CSS_Grundlagen/index.html)
-(served by [GitHub Pages](https://pages.github.com/)).
+Analoge Beispiele auf Englisch finden sich im folgenden Repository: https://github.com/MDecker-MobileComputing/HTML_Basics
 
 <br>
 
